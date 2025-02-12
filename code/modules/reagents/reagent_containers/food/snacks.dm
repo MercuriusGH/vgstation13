@@ -597,7 +597,7 @@
 			return 1
 		if(slice_act(user,W))
 			return 1
-		
+
 	if (istype(W, /obj/item/candle)) //candles added on afterattack
 		return 0
 
@@ -4358,8 +4358,6 @@
 	w_class = W_CLASS_MEDIUM
 	base_crumb_chance = 20
 
-/obj/item/weapon/reagent_containers/food/snacks/sliceable/pizza/on_vending_machine_spawn()
-	reagents.chem_temp = FRIDGETEMP_FREEZER
 
 /obj/item/weapon/reagent_containers/food/snacks/sliceable/pizza/margherita
 	name = "Margherita"
@@ -4518,11 +4516,6 @@
 
 /obj/item/pizzabox/return_air()//keeping your pizza warms
 	return
-
-/obj/item/pizzabox/on_vending_machine_spawn()//well, it's from the supply shuttle rather but hey
-	if (pizza)
-		pizza.on_vending_machine_spawn()
-		pizza.update_icon()
 
 /obj/item/pizzabox/update_icon()
 

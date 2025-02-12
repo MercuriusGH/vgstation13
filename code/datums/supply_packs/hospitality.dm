@@ -151,7 +151,7 @@
 					/obj/item/pizzabox/blingpizza)
 	name = "Surprise pack of five pizzas"
 	cost = 75
-	containertype = /obj/structure/closet/crate/freezer
+	containertype = /obj/structure/closet/crate/basic
 	containername = "pizza crate"
 	containsicon = /obj/item/weapon/reagent_containers/food/snacks/sliceable/pizza/margherita
 	containsdesc = "Order a bunch of pizza from the local pizza joint. It's run by assistants, so expect your order to get mixed up. They deliver in sets of five."
